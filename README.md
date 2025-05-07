@@ -1,7 +1,7 @@
 # Blade Emojis
 
-<a href="https://github.com/maiden-voyage-software/blade-emojis/actions?query=workflow%3ATests">
-    <img src="https://github.com/maiden-voyage-software/blade-emojis/workflows/Tests/badge.svg" alt="Tests">
+<a href="https://github.com/MaidenVoyageSoftware/blade-emojis/actions?query=workflow%3ATests">
+    <img src="https://github.com/MaidenVoyageSoftware/blade-emojis/workflows/Tests/badge.svg" alt="Tests">
 </a>
 <a href="https://packagist.org/packages/maiden-voyage-software/blade-emojis">
     <img src="https://img.shields.io/packagist/v/maiden-voyage-software/blade-emojis" alt="Latest Stable Version">

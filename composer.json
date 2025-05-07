@@ -2,7 +2,7 @@
     "name": "maiden-voyage-software/blade-emojis",
     "description": "A package to easily make use of Emojis in your Laravel Blade views.",
     "keywords": ["Blade", "Emojis", "Laravel"],
-    "homepage": "https://github.com/maiden-voyage-software/blade-emojis",
+    "homepage": "https://github.com/MaidenVoyageSoftware/blade-emojis",
     "license": "MIT",
     "authors": [
         {
