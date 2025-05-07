@@ -1,13 +1,13 @@
 # Blade Emojis
 
-<a href="https://github.com/MaidenVoyageSoftware/blade-emojis/actions?query=workflow%3ATests">
-    <img src="https://github.com/MaidenVoyageSoftware/blade-emojis/workflows/Tests/badge.svg" alt="Tests">
+<a href="https://github.com/maiden-voyage-software/blade-emojis/actions?query=workflow%3ATests">
+    <img src="https://github.com/maiden-voyage-software/blade-emojis/workflows/Tests/badge.svg" alt="Tests">
 </a>
-<a href="https://packagist.org/packages/MaidenVoyageSoftware/blade-emojis">
-    <img src="https://img.shields.io/packagist/v/MaidenVoyageSoftware/blade-emojis" alt="Latest Stable Version">
+<a href="https://packagist.org/packages/maiden-voyage-software/blade-emojis">
+    <img src="https://img.shields.io/packagist/v/maiden-voyage-software/blade-emojis" alt="Latest Stable Version">
 </a>
-<a href="https://packagist.org/packages/MaidenVoyageSoftware/blade-emojis">
-    <img src="https://img.shields.io/packagist/dt/MaidenVoyageSoftware/blade-emojis" alt="Total Downloads">
+<a href="https://packagist.org/packages/maiden-voyage-software/blade-emojis">
+    <img src="https://img.shields.io/packagist/dt/maiden-voyage-software/blade-emojis" alt="Total Downloads">
 </a>
 
 > This is a template repository for new icon packages for [Blade Icons](https://github.com/driesvints/blade-icons). Start a new repo with this and replace the relevant things below:
@@ -32,7 +32,7 @@ For a full list of available icons see [the SVG directory](resources/svg).
 ## Installation
 
 ```bash
-composer require MaidenVoyageSoftware/blade-emojis
+composer require maiden-voyage-software/blade-emojis
 ```
 
 ## Updating
