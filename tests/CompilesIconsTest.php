@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
+use BladeUI\Emojis\BladeEmojisServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Orchestra\Testbench\TestCase;
 
@@ -13,14 +13,21 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_compiles_a_single_anonymous_component()
     {
-        $result = svg('heroicon-o-bell')->toHtml();
+        $result = svg('emoji-brown-circle')->toHtml();
 
         // Note: the empty class here seems to be a Blade components bug.
         $expected = <<<'SVG'
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-            </svg>
-            SVG;
+			<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+			<g>
+				<circle style="fill:#965A45;" cx="63.93" cy="64" r="60"/>
+				<circle style="fill:#B76D54;" cx="60.03" cy="63.1" r="56.1"/>
+				<path style="fill:#E09A84;" d="M23.93,29.7c4.5-7.1,14.1-13,24.1-14.8c2.5-0.4,5-0.6,7.1,0.2c1.6,0.6,2.9,2.1,2,3.8
+					c-0.7,1.4-2.6,2-4.1,2.5c-9.38,3.1-17.47,9.21-23,17.4c-2,3-5,11.3-8.7,9.2C17.43,45.7,18.23,38.5,23.93,29.7z"/>
+			</g>
+			</svg>
+			SVG;
 
         $this->assertSame($expected, $result);
     }
@@ -28,13 +35,20 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_can_add_classes_to_icons()
     {
-        $result = svg('heroicon-o-bell', 'w-6 h-6 text-gray-500')->toHtml();
+        $result = svg('emoji-white-circle', 'w-6 h-6 text-gray-500')->toHtml();
 
         $expected = <<<'SVG'
-            <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-            </svg>
-            SVG;
+			<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+			<svg class="w-6 h-6 text-gray-500" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+			<g>
+				<circle style="fill:#BDBDBD;" cx="63.93" cy="64" r="60"/>
+				<circle style="fill:#E0E0E0;" cx="60.03" cy="63.1" r="56.1"/>
+				<path style="fill:#FFFFFF;" d="M23.93,29.7c4.5-7.1,14.1-13,24.1-14.8c2.5-0.4,5-0.6,7.1,0.2c1.6,0.6,2.9,2.1,2,3.8
+					c-0.7,1.4-2.6,2-4.1,2.5c-9.38,3.1-17.47,9.21-23,17.4c-2,3-5,11.3-8.7,9.2C17.43,45.7,18.23,38.5,23.93,29.7z"/>
+			</g>
+			</svg>
+			SVG;
 
         $this->assertSame($expected, $result);
     }
@@ -42,13 +56,20 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_can_add_styles_to_icons()
     {
-        $result = svg('heroicon-o-bell', ['style' => 'color: #555'])->toHtml();
+        $result = svg('emoji-white-circle', ['style' => 'color: #555'])->toHtml();
 
         $expected = <<<'SVG'
-            <svg style="color: #555" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-            </svg>
-            SVG;
+			<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+			<svg style="color: #555" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+			<g>
+				<circle style="fill:#BDBDBD;" cx="63.93" cy="64" r="60"/>
+				<circle style="fill:#E0E0E0;" cx="60.03" cy="63.1" r="56.1"/>
+				<path style="fill:#FFFFFF;" d="M23.93,29.7c4.5-7.1,14.1-13,24.1-14.8c2.5-0.4,5-0.6,7.1,0.2c1.6,0.6,2.9,2.1,2,3.8
+					c-0.7,1.4-2.6,2-4.1,2.5c-9.38,3.1-17.47,9.21-23,17.4c-2,3-5,11.3-8.7,9.2C17.43,45.7,18.23,38.5,23.93,29.7z"/>
+			</g>
+			</svg>
+			SVG;
 
         $this->assertSame($expected, $result);
     }
@@ -57,7 +78,7 @@ class CompilesIconsTest extends TestCase
     {
         return [
             BladeIconsServiceProvider::class,
-            BladeHeroiconsServiceProvider::class,
+            BladeEmojisServiceProvider::class,
         ];
     }
 }

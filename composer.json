@@ -1,16 +1,16 @@
 {
-    "name": "blade-organization/blade-heroicons",
-    "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
-    "keywords": ["Blade", "Heroicons", "Laravel"],
-    "homepage": "https://github.com/blade-organization/blade-heroicons",
+    "name": "MaidenVoyageSoftware/blade-emojis",
+    "description": "A package to easily make use of Emojis in your Laravel Blade views.",
+    "keywords": ["Blade", "Emojis", "Laravel"],
+    "homepage": "https://github.com/MaidenVoyageSoftware/blade-emojis",
     "license": "MIT",
     "authors": [
         {
-            "name": "Blade Developer"
+            "name": "Maiden Voyage Software"
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8",
         "blade-ui-kit/blade-icons": "^1.6",
         "illuminate/support": "^12.0"
     },
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BladeUI\\Heroicons\\": "src"
+            "BladeUI\\Emojis\\": "src"
         }
     },
     "autoload-dev": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BladeUI\\Heroicons\\BladeHeroiconsServiceProvider"
+                "BladeEmojisServiceProvider"
             ]
         }
     },
